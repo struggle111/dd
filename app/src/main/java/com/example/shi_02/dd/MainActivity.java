@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
 
     private Button button;
+    private Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,13 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,"dddd",Toast.LENGTH_LONG).show();
+            }
+        });
+        button2 = (Button)findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,"dddd2222",Toast.LENGTH_LONG).show();
             }
         });
     }
